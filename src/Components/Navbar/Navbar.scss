@@ -1,0 +1,39 @@
+$navbar-bg-color: #333;
+$navbar-text-color: rgba(249, 127, 127, 0.667);
+$navbar-link-padding: 10px;
+
+.navbar-container {
+  background-color: $navbar-bg-color;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  .home {
+    color: $navbar-text-color;
+    font-size: 24px;
+    font-weight: bold;
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  .navbar-item {
+    margin-left: 20px;
+  }
+
+  a {
+    color: $navbar-text-color;
+    padding: $navbar-link-padding;
+    text-decoration: none;
+    transition: color 0.3s;
+
+    &:hover {
+      color: lighten($navbar-text-color, 20%);
+    }
+  }
+}
